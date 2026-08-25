@@ -13,7 +13,6 @@ github_repo: "https://github.com/Lulili520/Lulili520.github.io" # source reposit
 # Sidebar settings
 sidebar: false                         # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/avatar_g.jpg
 
 
 
@@ -59,17 +58,6 @@ kramdown:
 # 评论系统
 # Disqus（https://disqus.com/）
 # disqus_username:
-
-# Gitalk. Keep disabled until a dedicated OAuth app and repository are configured.
-gitalk:
-  enable: false
-  clientID: ""
-  clientSecret: ""
-  repo: Lulili520.github.io
-  owner: Lulili520
-  admin: Lulili520
-  distractionFreeMode: true
-
 
 # 统计
 

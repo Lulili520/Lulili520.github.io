@@ -10,14 +10,6 @@ module.exports = function(grunt) {
             }
         },
         less: {
-            expanded: {
-                options: {
-                    paths: ["css"]
-                },
-                files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
-                }
-            },
             minified: {
                 options: {
                     paths: ["css"],
@@ -39,7 +31,7 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
                 }
             }
         },
