@@ -11,7 +11,6 @@ index.html              主页内容
 404.html                404 页面
 assets/style.css        页面样式
 img/                    图片与图标
-THIRD_PARTY_NOTICES.md  模板来源与许可说明
 ```
 
 推送到 `master` 后，GitHub Actions 会自动部署到：
