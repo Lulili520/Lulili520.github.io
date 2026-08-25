@@ -32,7 +32,6 @@ p { margin:0 0 16px; }
 .publication-list { margin:0; padding-left:22px; }
 .publication-list li { padding-left:4px; }
 .paper-title { font-weight:700; }
-.paper-link { white-space:nowrap; font-size:14px; }
 footer { width:min(1180px,calc(100% - 40px)); margin:auto; padding:22px 0 34px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:20px; color:var(--muted); font:12px/1.6 var(--sans); }
 @media (max-width:760px) {
   .masthead-inner { width:min(100% - 28px,620px); }
