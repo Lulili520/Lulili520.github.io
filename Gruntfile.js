@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             minified: {
                 options: {
                     paths: ["css"],
-                    cleancss: true
+                    compress: true
                 },
                 files: {
                     "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
@@ -43,29 +43,12 @@ module.exports = function(grunt) {
                 }
             }
         },
-        watch: {
-            scripts: {
-                files: ['js/<%= pkg.name %>.js'],
-                tasks: ['uglify'],
-                options: {
-                    spawn: false,
-                },
-            },
-            less: {
-                files: ['less/*.less'],
-                tasks: ['less'],
-                options: {
-                    spawn: false,
-                }
-            },
-        },
     });
 
     // Load the plugins.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
-    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
     grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
