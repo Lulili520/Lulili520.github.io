@@ -22,10 +22,10 @@ nav a { color:#555d65; font-size:15px; }
 h2 { margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); font:700 25px/1.35 var(--sans); }
 p { margin:0 0 16px; }
 .lead { font-size:20px; }
-.research-list { margin:0; padding:0; list-style:none; }
-.research-list li { padding:17px 0; border-bottom:1px solid var(--line); }
-.research-list strong { display:block; color:var(--text); font-family:var(--sans); font-size:17px; }
-.research-list span,.status p { color:var(--muted); }
+.research-list,.education-list { margin:0; padding:0; list-style:none; }
+.research-list li,.education-list li { padding:17px 0; border-bottom:1px solid var(--line); }
+.research-list strong,.education-list strong { display:block; color:var(--text); font-family:var(--sans); font-size:17px; }
+.research-list span,.education-list span,.status p { color:var(--muted); }
 footer { width:min(1180px,calc(100% - 40px)); margin:auto; padding:22px 0 34px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:20px; color:var(--muted); font:12px/1.6 var(--sans); }
 @media (max-width:760px) {
   .masthead-inner { width:min(100% - 28px,620px); }
@@ -37,4 +37,5 @@ footer { width:min(1180px,calc(100% - 40px)); margin:auto; padding:22px 0 34px; 
   .profile-links li { display:flex; gap:7px; }
   footer { width:min(100% - 36px,620px); flex-direction:column; }
 }
-@media (max-width:440px) { .site-title{font-size:15px} nav a{font-size:14px} .portrait{height:380px} }
+@media (max-width:560px) { .site-title{display:none} .masthead-inner{justify-content:center} nav{width:100%;justify-content:space-between} }
+@media (max-width:440px) { nav a{font-size:14px} .portrait{height:380px} }
