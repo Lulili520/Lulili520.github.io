@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light dark;
+  --page: #f6f8fb;
+  --surface: #fff;
+  --text: #202733;
+  --muted: #687386;
+  --line: #e5e9ef;
+  --accent: #2367aa;
+  --accent-soft: #edf5fc;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--page); color: var(--text); font: 16px/1.75 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.shell { width: min(960px, calc(100% - 32px)); margin: 42px auto; background: var(--surface); box-shadow: 0 18px 60px rgb(24 39 58 / 8%); }
+header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 23px 44px; border-bottom: 1px solid var(--line); }
+.brand { color: var(--text); font-weight: 650; letter-spacing: .02em; }
+nav { display: flex; gap: 24px; }
+nav a { color: var(--muted); }
+main { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 60px; padding: 58px 44px 72px; }
+.portrait { width: 210px; height: 210px; display: block; object-fit: contain; background: #fff; border-radius: 14px; }
+h1 { margin: 22px 0 2px; font-size: 32px; line-height: 1.2; }
+h2 { margin: 42px 0 14px; font-size: 21px; }
+p { margin: 0 0 14px; }
+.muted { color: var(--muted); }
+.profile-links { display: grid; gap: 8px; margin-top: 22px; }
+.intro { color: var(--text); font-size: 18px; }
+.topics { display: flex; flex-wrap: wrap; gap: 9px; }
+.topic { padding: 5px 11px; border-radius: 5px; background: var(--accent-soft); color: var(--accent); }
+.note { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); }
+footer { padding: 20px 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+
+@media (prefers-color-scheme: dark) {
+  :root { --page: #101315; --surface: #191d20; --text: #edf1f4; --muted: #a8b2bd; --line: #30363d; --accent: #7cb5ef; --accent-soft: #192d42; }
+  .shell { box-shadow: none; }
+}
+
+@media (max-width: 700px) {
+  .shell { width: 100%; margin: 0; box-shadow: none; }
+  header { padding: 19px 20px; }
+  nav { gap: 14px; }
+  main { grid-template-columns: 1fr; gap: 38px; padding: 36px 20px 52px; }
+  aside { display: grid; grid-template-columns: 120px 1fr; gap: 0 20px; align-items: start; }
+  .portrait { width: 120px; height: 120px; grid-row: 1 / 4; }
+  h1 { margin-top: 0; }
+  .profile-links { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  footer { padding: 18px 20px; }
+}

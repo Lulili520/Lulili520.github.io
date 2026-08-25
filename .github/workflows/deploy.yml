@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site
+name: Deploy static site
 
 on:
   push:
@@ -23,17 +23,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Configure Pages
-        id: pages
         uses: actions/configure-pages@v5
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3"
-          bundler-cache: true
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Prepare static site
+        run: |
+          mkdir _site
+          cp index.html 404.html _site/
+          cp -r assets img _site/
+          touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
