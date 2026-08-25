@@ -41,7 +41,7 @@ footer { width:min(1180px,calc(100% - 40px)); margin:auto; padding:22px 0 34px; 
   .page { width:min(100% - 36px,620px); padding-top:38px; grid-template-columns:1fr; gap:50px; }
   .profile { text-align:center; }
   .portrait { width:min(100%,340px); height:420px; margin:auto; }
-  .profile-links { display:flex; justify-content:center; gap:24px; }
+  .profile-links { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 24px; }
   .profile-links li { display:flex; gap:7px; }
   footer { width:min(100% - 36px,620px); flex-direction:column; }
 }
