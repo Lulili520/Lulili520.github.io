@@ -1,48 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Lu 的科研个人主页，关注人工智能、大语言模型与机器学习。">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#fbfbf9">
   <link rel="icon" href="/img/favicon.ico">
   <link rel="stylesheet" href="/assets/style.css">
   <title>Lu · Research</title>
 </head>
 <body>
-  <div class="shell">
-    <header>
-      <a class="brand" href="/">Lu · Research</a>
-      <nav aria-label="页面导航"><a href="#about">简介</a><a href="#research">研究</a><a href="#contact">联系</a></nav>
-    </header>
-
-    <main>
-      <aside>
-        <img class="portrait" src="/img/conan-profile.webp" alt="名侦探柯南">
-        <div><h1>Lu</h1><p class="muted">AI Researcher</p></div>
-        <div class="profile-links" id="contact">
-          <a href="mailto:luli662413@gmail.com">Email</a>
-          <a href="https://github.com/Lulili520">GitHub</a>
-        </div>
-      </aside>
-
-      <article>
-        <section id="about">
-          <p class="intro">你好，我是 Lu。我关注人工智能与大语言模型，并在这里记录自己的研究方向与科研工作。</p>
-        </section>
-        <section id="research">
-          <h2>Research Interests</h2>
-          <div class="topics">
-            <span class="topic">Large Language Models</span>
-            <span class="topic">Machine Learning</span>
-            <span class="topic">AI for Science</span>
-          </div>
-          <p class="note">研究成果与论文将在准备完成后更新。</p>
-        </section>
-      </article>
-    </main>
-
-    <footer>© 2026 Lu · Image © Gosho Aoyama / Shogakukan, YTV, TMS</footer>
-  </div>
+  <header class="masthead"><div class="masthead-inner">
+    <a class="site-title" href="/">Lu · Research</a>
+    <nav aria-label="页面导航"><a href="#about">主页</a><a href="#research">研究</a><a href="#contact">联系</a></nav>
+  </div></header>
+  <main class="page">
+    <aside class="profile" aria-label="个人信息">
+      <img class="portrait" src="/img/shinichi-kudo.jpg" alt="工藤新一单人立绘">
+      <h1>Lu</h1><p class="role">AI Researcher</p>
+      <ul class="profile-links" id="contact">
+        <li><span aria-hidden="true">✉</span><a href="mailto:luli662413@gmail.com">Email</a></li>
+        <li><span aria-hidden="true">⌘</span><a href="https://github.com/Lulili520">GitHub</a></li>
+      </ul>
+    </aside>
+    <article class="content">
+      <section id="about"><h2>About Me</h2><p class="lead">你好，我是 Lu。</p><p>我的研究兴趣集中在人工智能与大语言模型，希望通过简洁、可靠的方法解决有价值的科研问题。这个主页用于介绍我的研究方向，并持续记录后续工作。</p></section>
+      <section id="research"><h2>Research</h2><ul class="research-list">
+        <li><strong>Large Language Models</strong><span>大语言模型的理解、推理与应用</span></li>
+        <li><strong>Machine Learning</strong><span>可靠、可解释的机器学习方法</span></li>
+        <li><strong>AI for Science</strong><span>人工智能在科学研究中的实际应用</span></li>
+      </ul></section>
+      <section class="status" aria-label="研究动态"><h2>Updates</h2><p>论文与研究成果将在准备完成后更新。</p></section>
+    </article>
+  </main>
+  <footer><span>© 2026 Lu</span><span>Image © Gosho Aoyama / Shogakukan, YTV, TMS 1996</span></footer>
 </body>
 </html>
