@@ -1,0 +1,83 @@
+---
+layout: null
+permalink: /preview-research/
+---
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lu 的科研个人主页样式预览">
+  <title>Lu · Research Homepage Preview</title>
+  <style>
+    :root { color-scheme: light dark; --page:#f5f7fa; --paper:#fff; --text:#18202a; --muted:#647184; --line:#e2e7ed; --link:#245ea8; --soft:#edf4fc; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--text); font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:var(--link); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .page { max-width:1040px; min-height:100vh; margin:auto; background:var(--paper); }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 48px; border-bottom:1px solid var(--line); }
+    .brand,h1,h2,h3 { font-weight:600; }
+    nav { display:flex; flex-wrap:wrap; gap:24px; }
+    nav a { color:var(--muted); }
+    main { display:grid; grid-template-columns:220px minmax(0,1fr); gap:56px; padding:58px 48px 76px; }
+    .avatar { width:136px; height:136px; display:grid; place-items:center; border-radius:50%; background:var(--soft); color:var(--link); font-size:42px; font-weight:600; }
+    h1 { margin:22px 0 4px; font-size:32px; }
+    h2 { margin:46px 0 18px; font-size:23px; }
+    h3 { margin:0 0 6px; font-size:17px; }
+    p { margin:0 0 12px; color:var(--muted); }
+    .intro { color:var(--text); font-size:18px; }
+    .links { display:grid; gap:7px; margin-top:22px; }
+    .topics { display:flex; flex-wrap:wrap; gap:9px; }
+    .topic { padding:5px 10px; border-radius:5px; background:var(--soft); color:var(--link); }
+    .item { padding:20px 0; border-top:1px solid var(--line); }
+    .item:last-child { border-bottom:1px solid var(--line); }
+    .venue { color:var(--text); }
+    .actions { display:flex; flex-wrap:wrap; gap:16px; }
+    footer { padding:20px 48px; border-top:1px solid var(--line); color:var(--muted); }
+    @media (prefers-color-scheme:dark) { :root { --page:#101214; --paper:#191c1f; --text:#eef2f5; --muted:#a8b2bd; --line:#30363d; --link:#7db3f3; --soft:#192b3f; } }
+    @media (max-width:700px) {
+      header { padding:20px; align-items:flex-start; }
+      nav { justify-content:flex-end; gap:12px; }
+      main { grid-template-columns:1fr; gap:38px; padding:38px 20px 52px; }
+      aside { display:grid; grid-template-columns:96px 1fr; column-gap:20px; }
+      .avatar { width:96px; height:96px; font-size:30px; grid-row:1/4; }
+      h1 { margin-top:0; }
+      .links { grid-column:1/-1; grid-template-columns:repeat(2,minmax(0,1fr)); }
+      footer { padding:18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">Lu · Research</div>
+      <nav aria-label="主要导航"><a href="#about">About</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#cv">CV</a></nav>
+    </header>
+    <main>
+      <aside>
+        <div class="avatar" aria-label="个人照片占位">LU</div>
+        <div><h1>Lu</h1><p>Researcher in Artificial Intelligence</p><p>University / Laboratory</p></div>
+        <div class="links"><a href="mailto:luli662413@gmail.com">Email</a><a href="https://github.com/Lulili520">GitHub</a><a href="#">Google Scholar</a><a href="#cv">Curriculum Vitae</a></div>
+      </aside>
+      <article>
+        <section id="about">
+          <p class="intro">I am a researcher interested in understanding and building reliable intelligent systems. My work focuses on large language models, representation learning, and AI for science.</p>
+          <h2>Research Interests</h2>
+          <div class="topics"><span class="topic">Large Language Models</span><span class="topic">Machine Learning</span><span class="topic">AI for Science</span></div>
+        </section>
+        <section id="publications">
+          <h2>Selected Publications</h2>
+          <div class="item"><h3>Understanding Functional Representations in Large Language Models</h3><p><strong>Lu</strong>, Collaborator A, Collaborator B</p><p class="venue">Conference / Journal · 2026</p><div class="actions"><a href="#">Paper</a><a href="#">Code</a><a href="#">Project</a><a href="#">BibTeX</a></div></div>
+          <div class="item"><h3>Reliable Reasoning with Structured Neural Representations</h3><p>Collaborator A, <strong>Lu</strong>, Collaborator B</p><p class="venue">Conference / Journal · 2025</p><div class="actions"><a href="#">Paper</a><a href="#">Code</a><a href="#">BibTeX</a></div></div>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="item"><h3>Research Project</h3><p>A concise explanation of the research question, method, and contribution.</p><div class="actions"><a href="#">Overview</a><a href="#">Repository</a></div></div>
+        </section>
+      </article>
+    </main>
+    <footer>Preview with placeholder content · Hosted on GitHub Pages</footer>
+  </div>
+</body>
+</html>
