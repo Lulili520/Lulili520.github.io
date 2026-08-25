@@ -23,9 +23,13 @@ h2 { margin:0 0 18px; padding-bottom:9px; border-bottom:1px solid var(--line); f
 p { margin:0 0 16px; }
 .lead { font-size:20px; }
 .research-list,.education-list { margin:0; padding:0; list-style:none; }
-.research-list li,.education-list li { padding:17px 0; border-bottom:1px solid var(--line); }
+.research-list li { padding:17px 0; border-bottom:1px solid var(--line); }
 .research-list strong,.education-list strong { display:block; color:var(--text); font-family:var(--sans); font-size:17px; }
 .research-list span,.education-list span,.status p { color:var(--muted); }
+.education-list { display:grid; gap:18px; }
+.education-list li { padding:19px 22px; border-left:3px solid var(--accent); background:var(--surface); box-shadow:0 3px 14px rgb(31 36 41 / 5%); }
+.education-list span { display:block; line-height:1.6; }
+.education-list .school { margin-top:6px; color:var(--text); font-weight:600; }
 footer { width:min(1180px,calc(100% - 40px)); margin:auto; padding:22px 0 34px; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:20px; color:var(--muted); font:12px/1.6 var(--sans); }
 @media (max-width:760px) {
   .masthead-inner { width:min(100% - 28px,620px); }
