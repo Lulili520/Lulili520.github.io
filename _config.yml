@@ -7,6 +7,7 @@ description: "Every failure is leading towards success."
 keyword: "Lu Blog, Lulili520, 技术博客, 人工智能, 大语言模型"
 url: "https://lulili520.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+timezone: Asia/Shanghai
 github_repo: "https://github.com/Lulili520/Lulili520.github.io" # source repository
 
 # Sidebar settings
